@@ -3,11 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
-
+package RestaurantReservation;
 import java.util.ArrayList;
-
+import RestaurantReservation.restaurantRes;
 
 /**
  *
@@ -16,9 +14,19 @@ import java.util.ArrayList;
 public class restaurantResUI extends javax.swing.JFrame {
     private restaurantResCntl resCntl;
     private restaurantRes res;
-    private String lastName, firstName, phoneNum, restaurant;
+    private String lastName, firstName, phoneNum, restaurant, time;
+    private int numPeople;
     
+   
+    public restaurantResUI() {
+        initComponents();
+    }
+
     
+//    public restaurantRes getNewRes(){
+//        restaurantRes newRes = new restaurantRes(firstNameTxt.getText(), lastNameTxt.getText(), phoneTxt.getText(), numPeople);
+//        return newRes;
+//    }
     /**
      * this will be for persistent data down the road, when the user enters a name
         of an existing reservation and edits it in the "database" the system 
@@ -74,8 +82,9 @@ public class restaurantResUI extends javax.swing.JFrame {
      * @return numPeople = number of people in reservation party
      */
     public int getNumPeople(){
-        int num = 0;
-        return num;
+        int numPeople = 0;
+        
+        return numPeople;
     }
     /**
      * get reservation name selection from drop down menu
